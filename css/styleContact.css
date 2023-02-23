@@ -1,0 +1,140 @@
+/* general */
+:root {
+  --blue: rgb(0, 154, 216);
+  --date-odd: #2d303d;
+  --card-odd: #323544;
+  --14px: 0.875rem;
+  --21px: 1.3125rem;
+  --gray: rgb(191, 193, 200);
+  --footer-color: #262936;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+::placeholder {
+  color: #757575 !important;
+  font-size: var(--14px);
+}
+/* general */
+
+/* nav */
+.logo {
+  text-decoration: none;
+}
+
+.logo img {
+  width: 35% !important;
+}
+h1 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+h1 + p {
+  font-size: 0.625rem;
+  font-weight: 300;
+  line-height: 0.9375rem;
+}
+
+.navbar-nav a {
+  font-size: var(--14px);
+  line-height: var(--21px);
+  transition: color 0.1s, border 0.1s;
+}
+
+.nav-item:last-child a {
+  color: var(--blue);
+  border: 2px solid var(--blue);
+}
+
+.navbar-nav a:not(.nav-item:last-child a):hover {
+  color: var(--blue) !important ;
+  border: 2px solid var(--blue);
+}
+/* nav */
+
+/* section */
+section .container > .row:first-child {
+  background-color: var(--footer-color);
+  font-size: 0.8125rem;
+  font-weight: 300;
+  line-height: 1.2188rem;
+}
+
+section .container .row:first-child a {
+  color: var(--gray);
+}
+
+section .container .row:last-child > div > div {
+  background-color: var(--footer-color);
+}
+
+.space {
+  height: 13.75rem;
+}
+
+.space + div i {
+  color: var(--blue);
+}
+
+.space + div p,
+.space + div a {
+  color: var(--gray);
+  font-size: var(--14px);
+  line-height: var(--21px);
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h2 + p {
+  color: var(--gray);
+  font-size: var(--14px);
+  line-height: var(--21px);
+}
+
+textarea{
+  height: 9.375rem;
+  resize: vertical;
+}
+
+form button{
+  background-color: var(--blue) !important;
+}
+/* section */
+
+/* footer */
+footer {
+  background-color: var(--footer-color);
+}
+
+#subscribe + button {
+  padding-inline: 2.5rem;
+  top: 36%;
+  right: 0.5%;
+  bottom: 7%;
+  background-color: var(--blue);
+}
+
+footer a {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+footer a:hover {
+  color: white;
+  background-color: var(--blue) !important;
+}
+
+footer p {
+  color: var(--gray);
+  font-size: var(--14px);
+  font-weight: 300;
+  line-height: var(--21px);
+}
+/* footer */

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image" href="img/i1.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather temperatures</title>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- icons -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- style -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-5">
+    <div class="container">
+      <a class="d-inline-block logo" href="index.html">
+        <img src="img/logo@2x.png" class="d-inline-block me-2" alt="logo" />
+        <div class="d-inline-block align-middle text-white">
+          <h1 class="mb-1">Weather</h1>
+          <p class="m-0 text-light">tagline goes here</p>
+        </div>
+      </a>
+
+      <button class="navbar-toggler shadow-none py-3 border-2 border-info rounded-circle" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-4 mt-lg-0 text-center">
+          <li class="nav-item">
+            <a class="nav-link rounded-pill py-3 py-lg-1 px-4 mx-1 " href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white rounded-pill py-3 py-lg-1 px-4 mx-1 " href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white rounded-pill py-3 py-lg-1 px-4 mx-1 " href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white rounded-pill py-3 py-lg-1 px-4 mx-1 " href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white rounded-pill py-3 py-lg-1 px-4 mx-1 " href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- nav -->
+
+
+  <!-- sec1 -->
+  <section>
+    <div id="banner">
+      <div class="overlay h-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 ">
+              <div class="pt-4 position-relative ">
+                <input  class="form-control py-3 rounded-pill bg-dark shadow-none border-0 ps-4 text-white" type="text"
+                  id="search" placeholder="Find your location..." />
+                <button class="btn rounded-pill position-absolute py-2 text-white">Find</button>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+  
+        <div class="boxes py-5">
+          <div class="container ">
+            <div id="boxesWeather" class="row">
+              
+    
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- sec1 -->
+
+
+  <!-- footer -->
+  <footer class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-12">
+          <div class="pt-4 position-relative">
+            <input class="form-control py-3 rounded-pill bg-dark shadow-none border-0 ps-4 text-white" type="text"
+              id="subscribe" placeholder="Enter your email to subscribe..." />
+            <button class="btn rounded-pill position-absolute py-2 text-white">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 pt-4">
+          <a href="#" class=" text-decoration-none d-inline-block rounded-circle bg-dark text-center">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class=" text-decoration-none d-inline-block rounded-circle bg-dark text-center">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class=" text-decoration-none d-inline-block rounded-circle bg-dark text-center">
+            <i class="fa-brands fa-google-plus-g"></i>
+          </a>
+          <a href="#" class=" text-decoration-none d-inline-block rounded-circle bg-dark text-center">
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p class="py-4">Copyright 2023 Mohammed Ismail. Designed by Themezy. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

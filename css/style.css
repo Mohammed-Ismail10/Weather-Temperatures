@@ -1,0 +1,163 @@
+/* general */
+:root {
+  --blue: rgb(0, 154, 216);
+  --date-odd: #2d303d;
+  --card-odd: #323544;
+  --14px: 0.875rem;
+  --21px: 1.3125rem;
+  --gray: rgb(191, 193, 200);
+  --footer-color: #262936;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+::placeholder {
+  color: #757575 !important;
+  font-size: var(--14px);
+}
+/* general */
+
+/* nav */
+.logo {
+  text-decoration: none;
+}
+
+.logo img {
+  width: 35% !important;
+}
+h1 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+h1 + p {
+  font-size: 0.625rem;
+  font-weight: 300;
+  line-height: 0.9375rem;
+}
+
+.navbar-nav a {
+  font-size: var(--14px);
+  line-height: var(--21px);
+  transition: color 0.1s, border 0.1s;
+}
+
+.nav-item:first-child a {
+  color: var(--blue);
+  border: 2px solid var(--blue);
+}
+
+.navbar-nav a:not(.nav-item:first-child a):hover {
+  color: var(--blue) !important ;
+  border: 2px solid var(--blue);
+}
+/* nav */
+
+
+/* section */
+
+#banner {
+  background-image: url(../img/6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 350px;
+}
+
+.overlay{
+background-color: rgba(0, 0, 0,.3);
+}
+
+#search + button,
+#subscribe + button {
+  padding-inline: 2.5rem;
+  top: 36%;
+  right: 0.5%;
+  bottom: 7%;
+  background-color: var(--blue);
+}
+
+.date {
+  background-color: var(--date-odd);
+}
+.date + div {
+  background-color: var(--card-odd);
+}
+
+.date,
+.date2 {
+  font-size: var(--14px);
+  line-height: var(--21px);
+  color: var(--gray);
+}
+
+.date + div p:nth-of-type(1) {
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  color: var(--gray);
+}
+
+.date + div p:nth-of-type(2) {
+  font-size: 5.625rem;
+  font-weight: 700;
+  line-height: 8.4375rem;
+}
+
+.date + div p:nth-of-type(3),
+.date2 + div p:nth-of-type(3) {
+  font-size: var(--14px);
+  line-height: var(--21px);
+  color: var(--blue);
+}
+
+.date + div div {
+  color: var(--gray);
+}
+
+.date2 {
+  background-color: var(--date-odd);
+}
+
+.date2 + div {
+  background-color: var(--card-odd);
+}
+
+.date2 + div p:nth-of-type(1) {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+}
+
+.date2 + div p:nth-of-type(2) {
+  line-height: 1.5rem;
+  color: var(--gray);
+}
+/* section */
+
+
+/* footer */
+footer {
+  background-color: var(--footer-color);
+}
+
+footer a{
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  transition: color .5s, background-color .5s;
+}
+
+footer a:hover{
+  color: white;
+  background-color: var(--blue) !important;
+}
+
+footer p{
+  color: var(--gray);
+  font-size: var(--14px);
+  font-weight: 300;
+  line-height: var(--21px);
+}
+/* footer */
